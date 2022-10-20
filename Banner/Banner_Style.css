@@ -1,0 +1,173 @@
+.bg-white{
+    color: whitesmoke;
+}
+.navbar-brand-logo{
+    margin-right: 300px;
+}
+.navbar-white{
+    color: black;
+}
+.banner-area{
+    position: relative;
+    z-index: 9;
+    min-height:400px;
+    background: #f0f0f0;
+}
+.navbar-toggler{
+    background-color: #000000;
+    color: white;
+}
+.active{
+    color: black;
+}
+.banner-inner{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 400px;
+    z-index: 1;
+}
+.banner-container{
+    position: absolute;
+    top: 100px;
+    left: auto;
+    border: 1px solid black;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-left:auto;
+    margin-left: auto;
+}
+.banner-name{
+    display: inline-block;
+    color: #000000;
+    margin-bottom: 0px;
+    font-weight: 300;
+    font-size: 36px;
+    box-sizing: border-box;
+}
+.banner-shape1{
+    background-image:url(shape1.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 60%;
+    top: 0px;
+    padding-top: 100px;
+    padding-right: 100px;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    animation: glow1 1s infinite alternate 0.5s;
+}
+.banner-shape2{
+    background-image:url(shape3.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    box-sizing: border-box;
+    left: 20%;
+    top: 0px;
+    padding-top: 100px;
+    padding-right: 100px;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    animation: glow2 1s infinite alternate 1s;
+}
+.banner-shape3{
+    background-image:url(shape4.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 28%;
+    top: 196px;
+    padding-top: 100px;
+    padding-right: 100px;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    animation: glow1 1s infinite alternate 0.5s;
+}
+.banner-shape4{
+    background-image:url(shape7.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 4%;
+    top: 150px;
+    padding-top: 100px;
+    padding-right: 100px;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    animation: glow2 1s infinite alternate 1s;
+}
+.banner-shape5{
+    background-image:url(shape8.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 67%;
+    top: 196px;
+    padding-top: 100px;
+    padding-right: 100px;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    animation: glow1 1s infinite alternate 0.5s;
+}
+.banner-shape6{
+    background-image:url(shape9.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 80%;
+    top: 70px;
+    padding-top: 100px;
+    padding-right: 100px;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    animation: glow2 1s infinite alternate 1s;
+}
+.banner-shape7{
+    background-image:url(shape10.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 96.5%;
+    top: 200px;
+    padding-top: 100px;
+    padding-right: 46px;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    animation: glow2 1s infinite alternate 0.5s;
+}
+
+@keyframes glow1{
+    0%{
+        opacity: 10%;
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 10%;
+    }
+}
+@keyframes glow2{
+    0%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
