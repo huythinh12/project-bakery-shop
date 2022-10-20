@@ -49,7 +49,7 @@
     box-sizing: border-box;
 }
 .banner-shape1{
-    background-image:url(shape1.png);
+    background-image:url(/Asset/shape1.png);
     background-repeat: no-repeat;
     position: absolute;
     left: 60%;
@@ -63,7 +63,7 @@
     animation: glow1 1s infinite alternate 0.5s;
 }
 .banner-shape2{
-    background-image:url(shape3.png);
+    background-image:url(/Asset/shape3.png);
     background-repeat: no-repeat;
     position: absolute;
     box-sizing: border-box;
@@ -78,7 +78,7 @@
     animation: glow2 1s infinite alternate 1s;
 }
 .banner-shape3{
-    background-image:url(shape4.png);
+    background-image:url(/Asset/shape4.png);
     background-repeat: no-repeat;
     position: absolute;
     left: 28%;
@@ -92,7 +92,7 @@
     animation: glow1 1s infinite alternate 0.5s;
 }
 .banner-shape4{
-    background-image:url(shape7.png);
+    background-image:url(/Asset/shape7.png);
     background-repeat: no-repeat;
     position: absolute;
     left: 4%;
@@ -106,7 +106,7 @@
     animation: glow2 1s infinite alternate 1s;
 }
 .banner-shape5{
-    background-image:url(shape8.png);
+    background-image:url(/Asset/shape8.png);
     background-repeat: no-repeat;
     position: absolute;
     left: 67%;
@@ -120,7 +120,7 @@
     animation: glow1 1s infinite alternate 0.5s;
 }
 .banner-shape6{
-    background-image:url(shape9.png);
+    background-image:url(/Asset/shape9.png);
     background-repeat: no-repeat;
     position: absolute;
     left: 80%;
@@ -134,7 +134,7 @@
     animation: glow2 1s infinite alternate 1s;
 }
 .banner-shape7{
-    background-image:url(shape10.png);
+    background-image:url(/Asset/shape10.png);
     background-repeat: no-repeat;
     position: absolute;
     left: 96.5%;

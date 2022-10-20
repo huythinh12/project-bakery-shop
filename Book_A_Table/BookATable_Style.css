@@ -1,0 +1,103 @@
+.book-table-area{
+    width: 100%;
+    position: relative;
+}
+.section_gap{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.book-table-inner{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+}
+.book-table_img{
+    position: absolute;
+    background-image:url("/Asset/Cake_1.png");
+    background-repeat: no-repeat;
+    background-size: (555px 600px);
+    top: 100px;
+    left: 100px;
+    border: 1px solid black;
+    padding-top: 100px;
+    padding-right: 455px;
+    padding-bottom: 500px;
+    padding-left: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    vertical-align: middle;
+    z-index: 2;
+}
+.book-table_form{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    box-sizing: border-box;
+    height: 100%;
+    background-color:#f0f0f0;
+    padding-top: 110px;
+    padding-right: 100px;
+    padding-bottom: 600px;
+    padding-left: 180px;
+    margin-left: -74px;
+    margin-right: 100px;
+}
+.book-table_title{
+    display: block;
+    box-sizing: border-box;
+    color: #222222;
+    font-size: 48px;
+    margin-bottom: 12px;
+    font-weight: 300;
+    padding-top: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+}
+.book-table_info{
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 0px;
+    padding-top: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+}
+.book-table_box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.form-group{
+    margin-bottom: 1rem;
+}
+.form-control{
+    display: block;
+    width: 100%;
+    line-height: 1.5;
+    background-color: #fff;
+    background-clip: padding-box;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-select{
+    border-radius: 0px;
+    border: 1px solid #eeeeee;
+    height: 40px;
+    background: #fff;
+    width: 100%;
+}
+.nice-select{
+    border: none;
+    border-radius: 0px;
+    height: 40px;
+    width: 100%;
+}
+#form-select-event{
+    border-radius: 0px;
+    border: 1px solid #eeeeee;
+    height: 40px;
+    background: #fff;
+    width: 100%;
+}
