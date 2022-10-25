@@ -1,54 +1,143 @@
 @import url(https://fonts.google.com/specimen/Roboto?query=Roboto);
+@import url(https://fonts.google.com/specimen/Oswald?query=Oswald);
 
-html,body{
+body{
     width: 100%;
     height: 100%;
-    font-family: 'Roboto';
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 100px;
+    font-family: 'Roboto',sans-serif;
+    line-height: 27px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #777777;
 }
-.navbar{
-    background-color:#04091e !important;
-}
-.navbar-nav{
-    margin-left: 100px;
-}
-.navbar li a{
-    color: white !important;
-    margin-right: 20px;
-}
-.navbar li a:hover{
-    color: red !important;
-}
-.navbar-nav > .active > a { 
-  color: red !important; 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: "Oswald",serif;
+  font-weight: 700;
+  color: #222222;
 }
 
+/*--------------------------------------------------------------
+#  Navigation bar
+--------------------------------------------------------------*/
+
+.navbar{
+  background-color:#04091e !important;
+}
+.navbar-nav{
+  margin-left: 100px;
+}
+.navbar .main-menu{
+  color: white !important;
+  margin-right: 20px;
+
+}
+.navbar .main-menu:hover{
+  color: red !important;
+}
+.navbar-nav > .active > .main-menu { 
+color: red !important; 
+}
+  .dropdown:hover > .dropdown-menu {
+      display: inline-block;
+  }
+  .dropdown > .dropdown-toggle:active {
+      pointer-events: none;
+  }
+    .navbar-nav {
+      padding-top: 1rem;
+      @media (min-width: 1000px) {
+          padding-top: 0;
+      }
+  }
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+      outline: 0;
+  }
+  .navbar-toggler {
+      height: 45px;
+  }
+  .navbar-toggler span {
+      display: block;
+      background-color: white;
+      height: 2px;
+      width: 25px;
+      margin-top: 6px;
+      margin-bottom: 4px;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      position: relative;
+      opacity: 1;
+   }
+   .navbar-toggler span:nth-child(1),
+   .navbar-toggler span:nth-child(3) {
+      -webkit-transition: transform .35s ease-in-out;
+      -moz-transition: transform .35s ease-in-out;
+      -o-transition: transform .35s ease-in-out;
+      transition: transform .35s ease-in-out;
+   }
+   .navbar-toggler:not(.collapsed) span:nth-child(1) {
+       position: absolute;
+       top: 32px;
+       -webkit-transform: rotate(135deg);
+       -moz-transform: rotate(135deg);
+       -o-transform: rotate(135deg);
+       transform: rotate(135deg);
+       opacity: 0.9;
+   }
+   .navbar-toggler:not(.collapsed) span:nth-child(2) {
+       visibility: hidden;
+       background-color: transparent;
+   }
+   .navbar-toggler:not(.collapsed) span:nth-child(3) {
+       position: absolute;
+       top: 32px;
+       -webkit-transform: rotate(-135deg);
+       -moz-transform: rotate(-135deg);
+       -o-transform: rotate(-135deg);
+       transform: rotate(-135deg);
+       opacity: 0.9;
+   }
+.nav-link{
+  transition: all 400ms linear;
+}
+.dropdown-menu{
+  color: black !important;
+  background-color: white !important;
+}
+.dropdown-item-text:hover{
+  color: white !important;
+  background-color: red;
+  transition: all 300ms linear;
+  text-decoration: none;
+}
+/*--------------------------------------------------------------
+#  Banner Section
+--------------------------------------------------------------*/
 .banner-area{
   position: relative;
-  z-index: 9;
-  min-height:400px;
+  z-index: -1;
+  min-height:200px;
   background: #f0f0f0;
-}
-.navbar-toggler{
-  background-color: #000000;
-  color: white;
-}
-.active{
-  color: black;
+  box-sizing: content-box;
+  top: -100px;
 }
 .banner-inner{
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  padding-top: 300px;
-  padding-bottom: 100px;
+  padding-top: 400px;
   z-index: 1;
 }
 .banner-container{
   position: absolute;
-  top: 0px;
+  top: 100px;
   left: auto;
   width: 100%;
   padding-right: 15px;
@@ -65,8 +154,9 @@ html,body{
   font-weight: 300;
   font-size: 36px;
   box-sizing: border-box;
+  font-family: "Oswald",sans-serif;
 }
-.banner-shape1{
+.banner-shape1,.banner-shape3,.banner-shape5,.banner-shape7{
   background-image:url(/Asset/shape1.png);
   background-repeat: no-repeat;
   position: absolute;
@@ -80,7 +170,7 @@ html,body{
   margin-bottom: 1px;
   animation: glow1 1s infinite alternate 0.5s;
 }
-.banner-shape2{
+.banner-shape2,.banner-shape4,.banner-shape6{
   background-image:url(/Asset/shape3.png);
   background-repeat: no-repeat;
   position: absolute;
@@ -189,6 +279,10 @@ html,body{
   }
 }
 
+
+/*--------------------------------------------------------------
+#  Footer Section
+--------------------------------------------------------------*/
 .site-footer
 {
   background-color:#04091e;
@@ -212,7 +306,7 @@ html,body{
   font-size:18px;
   line-height: 24px;
   font-weight: bold;
-  font-family: "Oswald",serif;
+  font-family: "Oswald",sans-serif;
   margin-bottom:28px;
 }
 .site-footer a
@@ -239,8 +333,9 @@ html,body{
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
-  color:#3366cc;
+  color:white;
   text-decoration:none;
+  transition: all 300ms linear 0s;
 }
 .footer-links.inline li
 {
@@ -286,7 +381,7 @@ html,body{
 {
   padding-left:0;
   margin-bottom:0;
-  list-style:none
+  list-style: square;
 }
 .social-icons li
 {
@@ -312,8 +407,6 @@ html,body{
   text-align:center;
   margin-right:8px;
   border-radius:100%;
-  -webkit-transition:all .2s linear;
-  -o-transition:all .2s linear;
   transition:all .2s linear
 }
 .social-icons a:active,.social-icons a:focus,.social-icons a:hover

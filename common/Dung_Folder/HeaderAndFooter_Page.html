@@ -9,49 +9,59 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="HeaderAndFooter_Style.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css">
 <title>Header And Footer</title>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-light sticky-top">
-        <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="/Asset/Bakery_Logo.png" alt="Logo"  class="navbar-brand-logo">
-        </a>
-        <button class="navbar-toggler navbar ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">MENU</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">BOOK A TABLE</a>
-            </li>
-            <li class="nav-item dropdown ml-auto">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> BLOG </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Blog</a>
-                    <a class="dropdown-item" href="#">Blog Details</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT</a>
-            </li>
-            </ul>
-        </div>
-        </div>
-    </nav>
+<!-- Navigation -->
+<header>
+  <nav class="navbar navbar-light navbar-expand-lg py-3 px-4">
+      <a class="navbar-brand" href="#">
+          <img src="/Asset/Bakery_Logo.png" alt="Logo"  class="navbar-brand-logo">
+      </a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span> </span>
+      <span> </span>
+      <span> </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto text-right">
+          <li class="nav-item">
+              <a class="nav-link main-menu" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link main-menu" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link main-menu" href="#">MENU</a>
+          </li>
+          <li class="nav-item active">
+              <a class="nav-link main-menu" href="#">BOOK A TABLE</a>
+          </li>
+          <li class="nav-item dropdown ml-auto">
+              <a class="nav-link dropdown-toggle main-menu" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PAGES</a>
+              <div class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item-text" href="#">GALLERY</a>
+                  <a class="dropdown-item-text" href="#">ELEMENTS</a>
+              </div>
+          </li> 
+          <li class="nav-item dropdown ml-auto">
+              <a class="nav-link dropdown-toggle main-menu" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> BLOG </a>
+              <div class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item-text" href="#">BLOG</a>
+                  <a class="dropdown-item-text" href="#">BLOG DETAILS</a>
+              </div>
+          </li> 
+          <li class="nav-item">
+              <a class="nav-link main-menu" href="#">CONTACT</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<!-- End Navigation -->
 
-    <!--Banner-->
-    
+<!--Banner-->
 <section class="banner-area">
   <div class="banner-inner d-flex align-items-center">
       <div class="banner-container">
@@ -70,10 +80,10 @@
               <div class="banner-shape5"></div>
               <div class="banner-shape6"></div>
               <div class="banner-shape7"></div>
-          
       </div>
   </div>
 </section>
+<!-- End Banner-->
 
   <!-- Page Content -->
   <div class="container">
